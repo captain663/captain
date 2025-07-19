@@ -1,0 +1,149 @@
+/* Custom CSS for Product Page */
+
+/* Body and general styling */
+body {
+    background-color: #f8f9fa;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+/* Card styling */
+.card {
+    border: none;
+    box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
+    border-radius: 12px;
+    background-color: #ffffff;
+    margin-bottom: 20px;
+}
+
+.card-body {
+    padding: 25px;
+}
+
+/* Product title styling */
+.card-title {
+    font-weight: 600;
+    font-size: 1.4rem;
+    color: #333;
+    margin-bottom: 10px;
+}
+
+/* Price styling */
+.card-text {
+    font-size: 1.1rem;
+    font-weight: 500;
+    color: #333;
+}
+
+/* Product details styling */
+.text-muted {
+    color: #666 !important;
+    font-size: 0.9rem;
+}
+
+/* Add to Cart button styling - matching the purple/pink color from the image */
+.btn-primary {
+    background-color: #9c27b0 !important;
+    border-color: #9c27b0 !important;
+    color: white;
+    font-weight: 500;
+    padding: 10px 25px;
+    border-radius: 8px;
+    transition: all 0.3s ease;
+}
+
+.btn-primary:hover {
+    background-color: #7b1fa2 !important;
+    border-color: #7b1fa2 !important;
+    transform: translateY(-1px);
+    box-shadow: 0 4px 12px rgba(156, 39, 176, 0.3);
+}
+
+/* Image styling */
+.img-fluid {
+    border-radius: 8px;
+    transition: transform 0.3s ease;
+}
+
+.img-fluid:hover {
+    transform: scale(1.05);
+}
+
+/* Related Products section */
+h6 {
+    font-weight: 600;
+    color: #333;
+    margin-bottom: 15px;
+    font-size: 1rem;
+}
+
+/* Dots under related products */
+.dot {
+    height: 6px;
+    width: 6px;
+    background-color: #ddd;
+    border-radius: 50%;
+    display: inline-block;
+    margin: 0 2px;
+    transition: background-color 0.3s ease;
+}
+
+.dot:first-child {
+    background-color: #9c27b0;
+}
+
+.dot:hover {
+    background-color: #9c27b0;
+}
+
+/* Related products grid */
+.row-cols-auto .col {
+    margin-bottom: 15px;
+}
+
+/* Responsive adjustments */
+@media (max-width: 768px) {
+    .card-body {
+        padding: 20px;
+    }
+    
+    .card-title {
+        font-size: 1.2rem;
+    }
+    
+    .btn-primary {
+        width: 100%;
+        margin-top: 15px;
+    }
+}
+
+/* Container spacing */
+.container {
+    max-width: 1200px;
+}
+
+/* Additional styling for better visual hierarchy */
+.row {
+    align-items: start;
+}
+
+/* Thumbnail grid styling */
+.row-cols-2 .col {
+    padding: 3px;
+}
+
+/* Main product image container */
+.col-6:first-child {
+    padding-right: 10px;
+}
+
+/* Product details section */
+.col-md-6:last-child {
+    padding-left: 20px;
+}
+
+@media (max-width: 768px) {
+    .col-md-6:last-child {
+        padding-left: 15px;
+        margin-top: 20px;
+    }
+}

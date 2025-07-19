@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Checkout - صفحة الدفع</title>
+    <!-- Bootstrap CSS -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
+    <!-- Bootstrap RTL CSS -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.rtl.min.css" rel="stylesheet">
+    <!-- Custom CSS -->
+    <link href="bee4.css" rel="stylesheet">
+</head>
+<body>
+    <div class="container-fluid min-vh-100 d-flex align-items-center justify-content-center bg-light">
+        <div class="checkout-container bg-white rounded-3 shadow-sm p-4 p-md-5">
+            <!-- Header -->
+            <div class="d-flex justify-content-between align-items-center mb-4">
+                <h1 class="checkout-title mb-0 text-primary">Checkout</h1>
+                <a href="#" class="back-link text-decoration-none text-muted">
+                    <i class="me-2">←</i>Back To Shopping
+                </a>
+            </div>
+
+            <!-- Shipping Information -->
+            <div class="mb-4">
+                <div class="mb-3">
+                    <input type="text" class="form-control form-control-lg custom-input" placeholder="Enter Your Shipping Address">
+                </div>
+                <div class="mb-4">
+                    <input type="tel" class="form-control form-control-lg custom-input" placeholder="Enter Your Phone Number">
+                </div>
+            </div>
+
+            <!-- Card Details Section -->
+            <div class="mb-4">
+                <h2 class="card-details-title mb-4">Card Details</h2>
+                
+                <div class="mb-3">
+                    <input type="text" class="form-control form-control-lg custom-input" placeholder="Enter Your Card Number" >
+                </div>
+                
+                <div class="row g-3 mb-4">
+                    <div class="col-6">
+                        <input type="text" class="form-control form-control-lg custom-input" placeholder="Expiration Date">
+                    </div>
+                    <div class="col-6">
+                        <input type="text" class="form-control form-control-lg custom-input" placeholder="CVC">
+                    </div>
+                </div>
+            </div>
+
+            <!-- Order Button -->
+            <div class="text-center bg-dark ">
+                <button type="button" class="btn btn-lg order-btn px-5 py-3 bg-dark text-light"><a href="bee6.html">Order</a></button>
+            </div>
+        </div>
+    </div>
+</body>
+</html>

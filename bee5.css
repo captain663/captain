@@ -1,0 +1,129 @@
+/* Custom Styles for Checkout Page */
+
+body {
+    font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, 'Helvetica Neue', Arial, sans-serif;
+    background-color: #f8f9fa;
+}
+
+.checkout-container {
+    max-width: 500px;
+    width: 100%;
+    margin: 0 auto;
+    border: none;
+    box-shadow: 0 4px 20px rgba(0, 0, 0, 0.08);
+}
+
+.checkout-title {
+    font-size: 2.5rem;
+    font-weight: 600;
+    color: #212529;
+    margin-bottom: 0;
+}
+
+.back-link {
+    font-size: 1rem;
+    color: #6c757d !important;
+    font-weight: 500;
+    transition: color 0.2s ease;
+}
+
+.back-link:hover {
+    color: #495057 !important;
+}
+
+.custom-input {
+    background-color: #e9ecef;
+    border: none;
+    border-radius: 12px;
+    padding: 1rem 1.25rem;
+    font-size: 1rem;
+    color: #6c757d;
+    transition: all 0.2s ease;
+    box-shadow: none;
+}
+
+.custom-input:focus {
+    background-color: #dee2e6;
+    border: none;
+    box-shadow: 0 0 0 0.2rem rgba(108, 117, 125, 0.25);
+    color: #495057;
+}
+
+.custom-input::placeholder {
+    color: #6c757d;
+    opacity: 1;
+}
+
+.card-details-title {
+    font-size: 2rem;
+    font-weight: 600;
+    color: #212529;
+    margin-bottom: 1.5rem;
+}
+
+.order-btn {
+    background: linear-gradient(135deg, #b83dba, #9c27b0);
+    border: none;
+    border-radius: 12px;
+    color: white;
+    font-size: 1.1rem;
+    font-weight: 600;
+    padding: 1rem 3rem;
+    min-width: 200px;
+    transition: all 0.3s ease;
+    box-shadow: 0 4px 15px rgba(184, 61, 186, 0.3);
+}
+
+.order-btn:hover {
+    background: linear-gradient(135deg, #a836aa, #8e24aa);
+    transform: translateY(-2px);
+    box-shadow: 0 6px 20px rgba(184, 61, 186, 0.4);
+    color: white;
+}
+
+.order-btn:active {
+    transform: translateY(0);
+    box-shadow: 0 4px 15px rgba(184, 61, 186, 0.3);
+}
+
+/* Responsive Design */
+@media (max-width: 576px) {
+    .checkout-container {
+        margin: 1rem;
+        padding: 2rem 1.5rem;
+    }
+    
+    .checkout-title {
+        font-size: 2rem;
+    }
+    
+    .card-details-title {
+        font-size: 1.5rem;
+    }
+    
+    .back-link {
+        font-size: 0.9rem;
+    }
+    
+    .order-btn {
+        width: 100%;
+        min-width: auto;
+    }
+}
+
+/* RTL Support */
+[dir="rtl"] .back-link i {
+    margin-left: 0.5rem;
+    margin-right: 0;
+}
+
+/* Focus states for accessibility */
+.custom-input:focus,
+.order-btn:focus {
+    outline: none;
+}
+
+/* Smooth transitions */
+* {
+    transition: all 0.2s ease;
+}
